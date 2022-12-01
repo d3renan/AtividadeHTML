@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 4</title>
+</head>
+<body>
+    <h1>Notas, nome e media o aluno.</h1>
+
+    <p>Nome: <span id="nome"></span>.</p>
+    <p>Número da turma: <span id="numerodaturma">.</span></p>
+    <p>Geografia: <span id="geografia"></span>.</p>
+    <p>Português: <span id="portugues"></span>.</p>
+    <p>Matematica: <span id="matematica"></span>.</p>
+    <p>Media do Aluno: <span id="mediaaluno"></span>.</p>
+
+<script>
+        
+    let nome = prompt("Qual o nome do aluno?");
+    let numeroturma = prompt("Qual o número da turma do " +nome +"?");
+    let geografia = Number(prompt("Qual a nota de "+nome +" na materia de geografia?"));
+    let portugues = Number(prompt("Qual a nota de " +nome +" na materia de portugues?"));
+    let matematica = Number(prompt("Qual a nota de " +nome +" na materia de matematica?"));
+    let total = Number(geografia+portugues+matematica);
+    let media = total/3;
+
+    document.getElementById("nome").innerHTML = nome;
+    document.getElementById("numerodaturma").innerHTML = numeroturma;
+    document.getElementById("geografia").innerHTML = geografia;
+    document.getElementById("portugues").innerHTML = portugues;
+    document.getElementById("matematica").innerHTML = matematica;
+    document.getElementById("mediaaluno").innerHTML = media;
+
+</script>
+</body>
+</html>

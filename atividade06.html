@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+
+    <h1>Nome da loja e totais de vendas</h1>
+    <p>Loja: <span id="nome-loja"></span>.</p>
+    <p>Primeiro semestre: <span id="primeiro"></span>R$.</p>
+    <p>Segundo semestre: <span id="segundo"></span>R$.</p>
+    <p>Anual: <span id="total"></span>R$.</p>
+
+    <script>
+        let nome_loja = prompt("Nome da loja:");
+        let primeiro = Number(prompt("Vendas do primeiro semestre:"));
+        let segundo = Number(prompt("Vendas do segundo semestre"));
+        let total = primeiro+segundo;
+
+        document.getElementById("nome-loja").innerHTML = nome_loja;
+        document.getElementById("primeiro").innerHTML = primeiro;
+        document.getElementById("segundo").innerHTML = segundo;
+        document.getElementById("total").innerHTML = total;
+    </script>
+</body>
+</html>

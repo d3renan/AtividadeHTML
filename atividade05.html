@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    
+    <h1>Hora em segundos</h1>
+    <p>Horas: <span id="hora"></span>.</p>
+    <p>Hora em segundos: <span id="hora_em_segundos"></span>.</p>
+    
+    <script>
+        let hora = prompt("Hora desejada para converter");
+        let minuto = Number(60);
+        let segundo = Number(60);
+        let hora_em_segundos = hora*minuto*segundo;
+
+        document.getElementById("hora").innerHTML = hora;
+        document.getElementById("hora_em_segundos").innerHTML = hora_em_segundos;
+    </script>
+
+</body>
+</html>

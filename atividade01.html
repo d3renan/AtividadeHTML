@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ativade 01 JavaScript</title>
+</head>
+<body>
+    <h1>Atividade de Cadastro de dados de um professor.</h1>
+    <p>Nome: <span id="nome"></span></p>
+    <p>Enedereço: <span id="endereco"></span></span></p>
+    <p>Cidade: <span id="cidade"></span></p>
+    <p>UF: <span id="uf"></span></p>
+    <p>CEP: <span id="cep"></span></p>
+    <p>Telefone: <span id="telefone"></span></p>
+    <p>CPF: <span id="cpf"></span></p>
+    <p>RG: <span id="rg"></span></p>
+    <p>Data de Nascimento: <span id="nascimento"></span></p>
+    <p>Grau de Escolaridade: <span id="escolaridade"></span></p>
+    <p>Curso que leciona: <span id="leciona"></span></p>
+
+    <script>
+    let nome = prompt("Digite o nome do professor: ");
+    let endereco = prompt("Digite o endereço: ");
+    let cidade = prompt("Digite a cidade: ");
+    let uf = prompt("Digite a UF: ");
+    let cep = prompt("Digite o CEP do professor: ");
+    let telefone = prompt("Digite o telefone: ");
+    let cpf = prompt("Digite o CPF: ");
+    let rg = prompt("Digite o RG: ");
+    let dataNascimento = prompt("Digite a Data de Nascimento: ");
+    let grauEscolaridade = prompt("Digite o grau de escolaridade: ");
+    let cursoLeciona = prompt("Digite o curso que leciona: ");
+    
+    document.getElementById("nome").innerHTML=nome;
+    document.getElementById("endereco").innerHTML=endereco;
+    document.getElementById("cidade").innerHTML=cidade;
+    document.getElementById("uf").innerHTML=uf;
+    document.getElementById("cep").innerHTML=cep;
+    document.getElementById("telefone").innerHTML=telefone;
+    document.getElementById("cpf").innerHTML=cpf;
+    document.getElementById("rg").innerHTML=rg;
+    document.getElementById("nascimento").innerHTML=dataNascimento;
+    document.getElementById("escolaridade").innerHTML=grauEscolaridade;
+    document.getElementById("leciona").innerHTML=cursoLeciona;
+    </script>
+
+
+</body>
+</html>

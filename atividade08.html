@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 8</title>
+</head>
+<body>
+    <h1>Fast food.</h1>
+
+        <p>Nome do cliente: <span id="nome"></span>.</p>
+        <p>Total da compra: R$ <span id="total-da-compra"></span>.</p>
+
+    <script>
+        
+        let nome = prompt("Digite seu nome: ");
+        let hotdog_qtd = Number(prompt("Quantos hot-dog deseja: "));
+        let hamburguer_qtd = Number(prompt("Quantos hamburguers deseja: "));
+        let cheeseburguer_qtd = Number(prompt("Quantos cheeseburguer deseja: "));
+        let refrigerante_qtd = Number(prompt("Quantos refrigerantes deseja: "));
+        let batatas_qtd = Number(prompt("Quantas batatas deseja: "));
+        let hotdog_valor = Number(1.00);
+        let hamburguer_valor = Number(1.30);
+        let cheeseburguer_valor = Number(1.50);
+        let refrigerante_valor = Number(1.00);
+        let batatas_valor = Number(0.80);
+        let hotdog_total = Number(hotdog_qtd*hotdog_valor);
+        let hamburguer_total = Number(hamburguer_qtd*hamburguer_valor);
+        let cheeseburguer_total = Number(cheeseburguer_qtd*cheeseburguer_valor);
+        let refrigerante_total = Number(refrigerante_qtd*refrigerante_valor);
+        let batatas_total = Number(batatas_qtd*batatas_valor);
+        let total = Number(hotdog_total+hamburguer_total+cheeseburguer_total+refrigerante_total+batatas_total);
+
+        document.getElementById("nome").innerHTML = nome;
+        document.getElementById("total-da-compra").innerHTML = total;
+
+   
+
+    </script>
+</body>
+</html>

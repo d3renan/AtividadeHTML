@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 02 - Escola</title>
+</head>
+<body>
+    <h1>Atividades de dados de um disciplina escolar</h1>
+    <p>Nome: <span id="nome"></span></p>
+    <p>Descrição: <span id="descricao"></span></p>
+    <p>Frequêcia: <span id="frequencia"></span></p>
+    <p>A Média minima é 7: <span id="media"></span></p>
+
+<script>
+
+    let nome = prompt("Digite o nome do aluno: ");
+    let descricao = prompt("Descrição: ");
+    let frequencia = prompt("A frequência");
+    let minmedia = "7"
+    document.getElementById("nome").innerHTML=nome;
+    document.getElementById("descricao").innerHTML=descricao;
+    document.getElementById("frequencia").innerHTML=frequencia;
+    document.getElementById("media").innerHTML=minmedia;
+
+</script>
+
+
+</body>
+</html>

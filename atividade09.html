@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coversão</title>
+</head>
+<body>
+    <h1>Dolar para Real</h1>
+    <p>Quantidade em Dolares: USD <span id="dolar"></span></p>
+    <p>Digite o valor do Dolar hoje: <span id="dolarhj"></span></p>
+    <p>Quantidade em Reais: R$ <span id="reais"></span></p>
+    
+    <script>
+    
+     let dolar = Number(prompt("Quantidade em Dolares: "));   
+     let dolarhj = Number(prompt("Digite o Valor do Dolar hoje: "));
+     let real = dolarhj * dolar;   
+     document.getElementById("dolar").innerHTML = dolar;
+     document.getElementById("dolarhj").innerHTML=dolarhj;
+     document.getElementById("reais").innerHTML = real;
+    
+    </script>
+
+</body>
+</html>

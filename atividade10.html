@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Produto</h1>
+    <p>Produto: <span id="produto"></span></p>
+    <p>Preço do Produto: R$ <span id="preco_produto"></span></p>
+
+    <script>
+
+        let produto = prompt("Digite o nome do produto: ");
+        let custo_fabrica = Number(prompt("Digite o valor de Fabrica: "));
+        let taxa_de_imposto = 1.70;
+        let preco_produto = custo_fabrica * taxa_de_imposto;
+
+        document.getElementById("produto").innerHTML = produto;
+        document.getElementById("preco_produto").innerHTML = preco_produto;
+    
+    
+    </script>
+
+
+
+</body>
+
+</html>

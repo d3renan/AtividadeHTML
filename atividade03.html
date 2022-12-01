@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Três notas e a frequencia</title>
+</head>
+<body>
+    <h1>Cadastre e imprima três notas e a frequência de um aluno na disciplina. </h1>
+    <p>Digite o nome do aluno: <span id="nAluno"></span></p>
+    <p>Matematica <span id="matematica"></span></p>
+    <p>Português <span id="portugues"></span></p>
+    <p>Geografia <span id="geografia"></span></p>
+    <p>Frequência <span id="frequencia"></span></p>
+
+    <script>
+    
+    let nome = prompt("Digite o nome do aluno: ");
+    let matematica = prompt("Digite a nota: ");
+    let portugues = prompt("Digite a nota: ")
+    let geografia = prompt("Digite a nota: ")
+    let frequencia = prompt("Digite a frequência do aluno: ")
+    document.getElementById("nAluno").innerHTML=nome;
+    document.getElementById("matematica").innerHTML=matematica;
+    document.getElementById("portugues").innerHTML=portugues;
+    document.getElementById("geografia").innerHTML=geografia;
+    document.getElementById("frequencia").innerHTML=frequencia;
+
+
+
+    </script>
+
+
+
+</body>
+</html>
+
